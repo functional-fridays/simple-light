@@ -8,7 +8,11 @@ defmodule SimpleLightWeb.LightLive do
   def render(assigns) do
     ~L"""
     <h1>Front Porch Light</h1>
-    <%= @brightness %>%
+    <div class="meter">
+      <span style="width: <%= @brightness %>%">
+        <%= @brightness %>%
+      </span>
+    </div>
     """
   end
 end
