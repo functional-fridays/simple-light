@@ -13,6 +13,14 @@ defmodule SimpleLightWeb.LightLive do
         <%= @brightness %>%
       </span>
     </div>
+
+    <button phx-click="off">
+      Off
+    </button>
+
+    <button phx-click="on">
+      On
+    </button>
     """
   end
 end
