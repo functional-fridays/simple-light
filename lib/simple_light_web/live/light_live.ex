@@ -41,4 +41,16 @@ defmodule SimpleLightWeb.LightLive do
     socket = assign(socket, :brightness, 0)
     {:noreply, socket}
   end
+
+  def handle_event("down", _, socket) do
+    brightness = socket.assigns.brightness - 10
+    socket = assign(socket, :brightness, brightness)
+    {:noreply, socket}
+  end
+  
+  def handle_event("up", _, socket) do
+    brightness = socket.assigns.brightness + 10
+    socket = assign(socket, :brightness, brightness)
+    {:noreply, socket}
+  end
 end
