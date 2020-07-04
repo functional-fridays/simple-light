@@ -2,6 +2,10 @@
 
 This code follows free course from [pragmaticstudio](https://pragmaticstudio.com/tutorials/getting-started-with-phoenix-liveview)
 
+Set up local postgres with Docker
+
+ * `docker run --name light-postgres -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres`
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
