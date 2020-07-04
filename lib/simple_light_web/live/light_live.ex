@@ -43,12 +43,12 @@ defmodule SimpleLightWeb.LightLive do
   end
 
   def handle_event("down", _, socket) do
-    socket = update(socket, :brightness, fn b -> b - 10 end)
+    socket = update(socket, :brightness, &(&1 - 10))
     {:noreply, socket}
   end
   
   def handle_event("up", _, socket) do
-    socket = update(socket, :brightness, fn b -> b + 10 end)
+    socket = update(socket, :brightness, &(&1 + 10))
     {:noreply, socket}
   end
 end
