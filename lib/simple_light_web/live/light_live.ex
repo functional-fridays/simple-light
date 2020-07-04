@@ -18,6 +18,14 @@ defmodule SimpleLightWeb.LightLive do
       Off
     </button>
 
+    <button phx-click="down">
+      Down
+    </button>
+    
+    <button phx-click="up">
+      Up
+    </button>
+
     <button phx-click="on">
       On
     </button>
